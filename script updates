@@ -1,0 +1,19 @@
+/* Append place to add auto increament value*/
+
+var array_text = [];
+ array_text.push('1');
+  var count_array_text = array_text.length;
+  'remote-stream-container article'+count_array_text+''
+  
+  
+  
+  /*Foreach Auto increament*/
+  <a class="add btn btn-info" href="" onclick="increment()"><i class="fa fa-plus-circle"></i> Add More</a>
+  function increment() {
+				var i=0;
+				$('.counter').each(function(e){
+					i++;
+					var newID='counter'+i;
+					$(this).attr('id',newID);
+					$(this).val(i); 
+				});
